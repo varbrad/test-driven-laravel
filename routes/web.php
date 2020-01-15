@@ -12,3 +12,7 @@
 */
 
 Route::get('/concerts/{concert}', 'ConcertsController@show');
+
+// API-ish
+
+Route::post('/concerts/{concert}/orders', 'ConcertOrdersController@store');
